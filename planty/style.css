@@ -1,0 +1,225 @@
+/*
+ Theme Name:   Planty Thème
+ Theme URI:    https://wpastra.com/
+ Description:  Thème enfant pour le site Planty
+ Author URI:   http://exemple.com
+ Template:     astra
+ Version:      1.0.0
+ Text Domain:  planty
+*/
+
+/***** HEADER *****/
+
+a.menu-link:hover {
+  font-weight: 600;
+}
+.item-commander a.menu-link {
+  background-color: #dc9f96;
+  font-weight: 600;
+  color: white !important;
+  padding: 0 50px;
+}
+
+.item-commander a.menu-link:hover {
+  background-color: #c02e44;
+}
+
+/***** NOUS RENCONTRER *****/
+
+.backgroundimage-equipe {
+  background-color: #ffffff;
+}
+
+.wpcf7 form {
+  display: grid;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.wpcf7-form br {
+  display: none;
+}
+
+.wpcf7 form > div,
+.wpcf7 form > p {
+  /* Alignement centre bouton "Envoyer" */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="submit"] {
+  /* Bouton envoyer */
+  background-color: #e0b9b4;
+  border-radius: 5px;
+  padding: 20px 70px;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+input[type="submit"]:hover {
+  /* Hover bouton envoyer */
+  background-color: #c02e44;
+  color: white;
+}
+
+.wpcf7-response-output {
+  /* Modification texte réponse */
+  background-color: lightgreen;
+  color: white;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/***** COMMANDER *****/
+.separateur-commander {
+  width: 50%;
+}
+
+/* Contact form */
+.section-commande {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.product {
+  background-color: beige;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product p {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 90%;
+}
+
+.product label {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 800;
+  width: 90%;
+}
+
+.option {
+  text-align: center;
+  width: 22%;
+  max-width: 260px;
+}
+
+.options-commande {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 20px;
+  justify-content: space-evenly;
+  border-top: 10px greenyellow;
+}
+
+.quantite {
+  padding: 20px 0;
+}
+
+.quantite-produits {
+  text-align: center;
+  width: 35% !important;
+}
+
+.options-livraison {
+  justify-content: space-around !important;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: row !important;
+  align-items: flex-end !important;
+}
+
+.data-livraison {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.titreH2 {
+  color: white !important;
+  margin-bottom: 0 !important;
+  font-weight: 600 !important;
+}
+
+.data-livraison label {
+  color: white;
+}
+
+.data-livraison:not(:last-child) {
+  /* Bordure à droite de tout les colonnes sauf le dernièr */
+  border-right: 1px solid #ccc;
+}
+
+.data-livraison p {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bouton-commander {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.bouton-commander p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/***** RESPONSIVE MOBILE *****/
+@media screen and (max-width: 768px) {
+  /* Commander */
+  .option {
+    flex: 1 1 45%;
+  }
+
+  .options-livraison {
+    flex-direction: column !important;
+    gap: 30px;
+  }
+
+  .data-livraison {
+    gap: 10px;
+    width: 100%;
+  }
+
+  .data-livraison:not(:last-child) {
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+.wpcf7-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Style du lien Admin dans le menu */
+.menu-item a{
+  padding: 20px; /* Espacement autour du lien */
+}
+
+.menu-item a:hover{
+  color: black;
+  font-weight: 600;
+}

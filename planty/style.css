@@ -65,14 +65,7 @@ input[type="submit"]:hover {
   color: white;
 }
 
-.wpcf7-response-output {
-  /* Modification texte réponse */
-  background-color: lightgreen;
-  color: white;
-  border-radius: 25px;
-  font-size: 20px;
-  font-weight: 600;
-}
+
 
 /***** COMMANDER *****/
 .separateur-commander {
@@ -161,7 +154,7 @@ input[type="submit"]:hover {
   color: white;
 }
 
-.data-livraison:not(:last-child) {
+.data-livraison.info {
   /* Bordure à droite de tout les colonnes sauf le dernièr */
   border-right: 1px solid #ccc;
 }
@@ -200,7 +193,7 @@ input[type="submit"]:hover {
     width: 100%;
   }
 
-  .data-livraison:not(:last-child) {
+  .data-livraison.info {
     border-right: none;
   }
 }

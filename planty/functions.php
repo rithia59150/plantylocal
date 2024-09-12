@@ -24,7 +24,7 @@ add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
 // Fonction pour ajouter le lien "Admin" dans le menu pour les utilisateurs connectés
 function add_admin_link_to_menu( $items, $args ) {
     // Vérifiez si l'utilisateur est connecté
-    if ( is_user_logged_in() && $args->theme_location == 'primary' ) {
+    if ( is_user_logged_in() && ($args->theme_location == 'primary' || $args->theme_location == 'mobile_menu') ) {
         // Créez le lien "Admin"
         $admin_link = '<li class="menu-item"><a href="' . admin_url() . '">Admin</a></li>';
         

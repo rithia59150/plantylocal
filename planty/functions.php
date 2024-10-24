@@ -51,8 +51,6 @@ function add_admin_link_to_menu( $items, $args ) {
 }
 add_filter( 'wp_nav_menu_items', 'add_admin_link_to_menu', 10, 2 );
 
-$admin_link = '<li class="menu-item admin-link"><a href="' . admin_url() . '">Admin</a></li>';
-
 
 
 
